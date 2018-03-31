@@ -1,0 +1,5 @@
+<!-- //++[Issue Fix][amt_masd_chun_li][2017/09/28][SmartCardService] Add SmartcardService service to AMS Background Execution White list -->
+<config>
+    <allow-in-background package="org.simalliance.openmobileapi.service" />
+</config>
+<!-- //~~[Issue Fix][amt_masd_chun_li][2017/09/28][SmartCardService] Add SmartcardService service to AMS Background Execution White list -->

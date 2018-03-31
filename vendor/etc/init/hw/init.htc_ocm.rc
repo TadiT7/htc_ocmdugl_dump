@@ -1,0 +1,75 @@
+import /vendor/etc/init/hw/init.qcom.rc
+import /vendor/etc/init/hw/init.htc.common.rc
+import /vendor/etc/init/hw/init.htc.usb.configfs.rc
+import /vendor/etc/init/hw/init.common.nanohub.rc
+import /vendor/etc/init/hw/init.htc_ocm.fp.rc
+import /vendor/etc/init/hw/init.htc_multisim.rc
+import init.htc.storage.exfat.rc
+import /vendor/etc/init/hw/init.htc_storage.rc
+
+on late-init
+# HTC USB ++
+    setprop sys.usb.configfs 1
+# HTC USB --
+
+on boot
+# NFC Felica++
+# permissions for Felica
+	chmod 0600 /dev/cxd224x-i2c
+	chown nfc nfc /dev/cxd224x-i2c
+# NFC Felica --
+
+ # HTC Automotive - BEGIN 2017-2-14
+   service cand /system/bin/cand
+   class main
+   user root
+# HTC Automotive – END
+
+# RIL - BEGIN
+# log level control
+on property:persist.sys.htcdebugflag=1
+    setprop persist.log.tag.QC-NETMGR-LIB V
+    setprop persist.log.tag.RILQ V
+    setprop persist.log.tag.RILJ V
+    setprop persist.log.tag.Diag_Lib V
+
+on property:persist.sys.htcdebugflag=0
+    setprop persist.log.tag.QC-NETMGR-LIB W
+    setprop persist.log.tag.RILQ W
+    setprop persist.log.tag.RILJ W
+    setprop persist.log.tag.Diag_Lib W
+# RIL - END
+
+# HTC Network - BEGIN
+service htcnetd /system/bin/htcnetd
+    class main
+    socket htcnetd stream 0660 root inet
+    user root
+
+# log level control
+on property:persist.sys.htcdebugflag=1
+    setprop persist.log.tag.dnsmasq V
+    setprop persist.log.tag.Netd V
+    setprop persist.log.tag.NetdConnector V
+    setprop persist.log.tag.IptablesRestoreController V
+    setprop persist.log.tag.BandwidthController V
+    setprop persist.log.tag.NetUtilsWrapper V
+    setprop persist.log.tag.iptables V
+    setprop persist.log.tag.ip6tables V
+
+on property:persist.sys.htcdebugflag=0
+    setprop persist.log.tag.dnsmasq W
+    setprop persist.log.tag.Netd W
+    setprop persist.log.tag.NetdConnector W
+    setprop persist.log.tag.IptablesRestoreController W
+    setprop persist.log.tag.BandwidthController W
+    setprop persist.log.tag.NetUtilsWrapper W
+    setprop persist.log.tag.iptables W
+    setprop persist.log.tag.ip6tables W
+# HTC Network - END
+
+# Security - Tamper Detectio - BEGIN
+service tpd_daemon /system/bin/tpd_daemon
+    class core
+    user root
+# Security - Tamper Detection - END

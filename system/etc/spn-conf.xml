@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spnOverrides>
+<!--
+	@Author: HTC Shawn Ku
+	@Date: 2010/02/23
+	
+	This is a list for operator specific SPNs.
+	We will use below SPN for instead if numeric is matched.
+	     
+	Format is listed as below:
+	<spnOverrides
+	    numeric="MCC+MNC"
+	    spn="SPN Name"/>
+-->
+<!-- [HTC_PHONE] s: Mavis 20170420 OCEAN_UHL_N71_SENSE90GP_JAPAN#1325 -->
+<!--    <spnOverride
+        numeric="44020"
+        spn="SoftBank"/> -->
+</spnOverrides>

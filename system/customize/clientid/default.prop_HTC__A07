@@ -1,0 +1,15 @@
+ro.com.google.clientidbase=android-htc
+ro.product.model=HTC U11 plus
+ro.ril.oem.ecclist=112,911,101,102,103,01,02,03
+ro.ril.esm.blacklist=22601,26806,26801,21403,42502,25007,25054,25027
+dev.defaultwallpaper=/system/customize/resource/wallpapers_00.jpg
+ro.ril.oem.normalcall.ecclist=101,102,103
+ro.cw.base.version=O80
+ro.ussd_exclude=01,02,03,04
+ro.product.locale=en-US
+ro.com.android.dataroaming=false
+ro.com.google.clientidbase=android-htc
+ro.product.model=HTC U11 plus
+dev.defaultwallpaper=/system/customize/resource/wallpapers_00.jpg
+ro.cw.base.version=O80
+ro.product.locale=en-US

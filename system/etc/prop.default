@@ -1,0 +1,15 @@
+#
+# ADDITIONAL_DEFAULT_PROPERTIES
+#
+ro.secure=1
+security.perf_harden=1
+ro.adb.secure=1
+ro.allow.mock.location=0
+ro.debuggable=0
+#
+# BOOTIMAGE_BUILD_PROPERTIES
+#
+ro.bootimage.build.date=四 12月 21 14:54:05 CST 2017
+ro.bootimage.build.date.utc=1513839245
+ro.bootimage.build.fingerprint=htc/ocmdugl_00401/htc_ocmdugl:8.0.0/OPR6.170623.013/1010171.2:user/release-keys
+persist.sys.usb.config=none

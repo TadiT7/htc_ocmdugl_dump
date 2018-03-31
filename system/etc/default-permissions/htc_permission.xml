@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<exceptions>
+    <!-- //++[Feature][bryan_wu][2015/08/21][RuntimePermission] FileManager: To read/write SDcard files -->
+    <exception package="com.htc.filemanager">
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" />
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    </exception>
+    <!-- //~~[Feature][bryan_wu][2015/08/21][RuntimePermission] FileManager: To read/write SDcard files -->
+
+    <!-- //++[Feature][nienkun_yeh][2015/09/03][RuntimePermission] CustomizationSetup: SIE customization by SIM -->
+    <exception package="com.htc.CustomizationSetup">
+        <permission name="android.permission.READ_PHONE_STATE" />
+    </exception>
+    <!-- //~~[Feature][nienkun_yeh][2015/09/03][RuntimePermission] CustomizationSetup: SIE customization by SIM -->
+
+    <!-- //++[Feature][ted_hsu][2015/10/02][RuntimePermission] Get account: Allows access to the list of accounts in the Accounts Service for Google Sign in.  -->
+    <exception package="com.htc.cs.identity">
+        <permission name="android.permission.GET_ACCOUNTS" />
+    </exception>
+    <!-- //~~[Feature][ted_hsu][2015/10/02][RuntimePermission] Get account: Allows access to the list of accounts in the Accounts Service for Google Sign in. -->
+
+    <!-- //++[Feature][oodtsen][2016/10/27][RuntimePermission] Weather: add essential permissions for Weather -->
+    <exception package="com.htc.Weather">
+        <permission name="android.permission.ACCESS_FINE_LOCATION" />
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" />
+    </exception>
+    <!-- //~~[Feature][oodtsen][2016/10/27][RuntimePermission] Weather: add essential permissions for Weather -->
+
+    <!-- //++[Customization][zoey_chen][2016/06/30][RuntimePermission]incallui : add essential permissions for incallui -->
+    <exception package="com.android.incallui">
+        <permission name="android.permission.READ_PHONE_STATE" />
+        <permission name="android.permission.READ_CONTACTS" />
+        <permission name="android.permission.WRITE_CONTACTS" />
+        <permission name="android.permission.GET_ACCOUNTS" />
+        <permission name="android.permission.SEND_SMS" />
+        <permission name="android.permission.READ_CALL_LOG" />
+        <permission name="android.permission.WRITE_CALL_LOG" />
+    </exception>
+    <!-- //~~[Customization][zoey_chen][2016/06/30][RuntimePermission]incallui : add essential permissions for incallui -->
+
+</exceptions>

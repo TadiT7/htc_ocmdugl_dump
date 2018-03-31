@@ -1,0 +1,4 @@
+<config>
+    <allow-in-power-save package="com.htc.sense.mms" />
+    <allow-in-data-usage-save package="com.htc.sense.mms" />
+</config>

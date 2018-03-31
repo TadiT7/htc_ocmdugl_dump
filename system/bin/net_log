@@ -1,0 +1,54 @@
+#---------------definition---------------------------------
+# SYSPROP_HTCNETD_DEBUG         : system property of logging control
+# SYSPROP_HTCNETD_TCPDUMP_ARGS  : system property of tcpdump arguments
+#
+SYSPROP_HTCNETD_DEBUG=persist.sys.htcnetd.debug
+SYSPROP_HTCNETD_TCPDUMP_ARGS=persist.sys.htcnetd.tcpdp.args
+
+#---------------main entry---------------------------------
+#
+case $1 in
+    "on")
+        echo "net log on"
+
+        if [ $# -ge 2 ]; then
+            SIZE_LIMIT=$2
+        else
+            SIZE_LIMIT=100
+        fi
+
+        if [ $# -ge 3 ]; then
+            LOG_PATH=$3
+        else
+            LOG_PATH="/sdcard/htclog"
+        fi
+
+        # create log directory and save arguments to system property
+        mkdir -p $LOG_PATH
+        setprop "$SYSPROP_HTCNETD_TCPDUMP_ARGS" "$SIZE_LIMIT,$LOG_PATH"
+
+        # enable service
+        setprop "$SYSPROP_HTCNETD_DEBUG" "1"
+        ndc htcnetd config reconfig
+        ndc htcnetd log tcpdump start $SIZE_LIMIT $LOG_PATH
+        ;;
+
+    "off")
+        echo "net log off"
+        setprop "$SYSPROP_HTCNETD_DEBUG" "0"
+        ndc htcnetd log tcpdump stop
+        ;;
+
+    "del")
+        ARGS=$(getprop "$SYSPROP_HTCNETD_TCPDUMP_ARGS")
+        LOG_PATH=${ARGS#*,}
+        if [ -z "$LOG_PATH" ]; then
+            LOG_PATH="/sdcard/htclog"
+        fi
+        rm $LOG_PATH/tcpdump*
+        ;;
+
+    *)
+        echo "parameter is not expected!"
+        ;;
+esac

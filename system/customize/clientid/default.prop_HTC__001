@@ -1,0 +1,9 @@
+ro.com.google.clientidbase=android-htc
+ro.product.model=HTC U11 plus
+ro.phone.min_match=8
+ro.ril.oem.ecclist=999,112,911
+ro.ril.esm.blacklist=22601,26806,26801,21403,42502,25007,25054,25027
+dev.defaultwallpaper=/system/customize/resource/wallpapers_00.jpg
+ro.cw.base.version=O80
+ro.product.locale=en-US
+ro.com.android.dataroaming=false

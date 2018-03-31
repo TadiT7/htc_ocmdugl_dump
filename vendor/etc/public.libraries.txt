@@ -1,0 +1,9 @@
+libqti-perfd-client.so
+libadsprpc.so
+libcdsprpc.so
+libsdsprpc.so
+libMcClient.so
+libMcRegistry.so
+libqvrservice_client.so
+libtzcom.so
+libOpenCL.so

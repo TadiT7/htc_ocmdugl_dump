@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<customization_form>
+  <category name="application">
+    <module name="Android_Telephony">
+      <function name="settings">
+        <set name="gsm_roaming_networks" type="string-array">
+          <item>310070:310110,310140,310400,310470,311170</item>
+          <item>310090:310110,310140,310400,310470,311170</item>
+          <item>310150:310110,310140,310400,310470,311170</item>
+          <item>310170:310110,310140,310400,310470,311170</item>
+          <item>310380:310110,310140,310400,310470,311170</item>
+          <item>310410:310110,310140,310400,310470,311170</item>
+          <item>310560:310110,310140,310400,310470,311170</item>
+          <item>310680:310110,310140,310400,310470,311170</item>
+          <item>310980:310110,310140,310400,310470,311170</item>
+          <item>311180:310110,310140,310400,310470,311170</item>
+        </set>
+      </function>
+    </module>
+  </category>
+</customization_form>

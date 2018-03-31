@@ -1,0 +1,8 @@
+service ril-daemon /vendor/bin/hw/rild
+    class main
+    user radio
+#SSD_RIL++
+    #add system for qcril.db and for uio device for smlog
+    group radio cache inet misc audio log readproc wakelock oem_2901 system
+#SSD_RIL--
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW

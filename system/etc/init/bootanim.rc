@@ -1,0 +1,9 @@
+service bootanim /system/bin/bootanimation
+    class core animation
+    user graphics
+    #//++[Feature][wei_xu][2016/10/07][Bootanimation] Add carrier group
+    group graphics audio oem_5011
+    #//--[Feature][wei_xu][2016/10/07][Bootanimation] Add carrier group
+    disabled
+    oneshot
+    writepid /dev/stune/top-app/tasks

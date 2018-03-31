@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <default-enabled-vr-app package="com.htc.vr.core.server"
+        class="com.htc.vr.core.server.VRListenerService" />
+</config>
+

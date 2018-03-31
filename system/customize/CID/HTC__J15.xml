@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<customization_form>
+  <category name="application">
+    <module name="FOTA">
+      <function name="settings">
+        <set name="single">
+          <item name="Default_Download_Wifi" type="boolean">yes</item>
+        </set>
+      </function>
+    </module>
+    <module name="OOBE">
+      <function name="Step_Config">
+        <set name="single">
+          <item name="Data_Connection" type="boolean">yes</item>
+        </set>
+      </function>
+      <function name="Data_Connection_Config">
+        <set name="single">
+          <item name="Show_Mobile" type="boolean">yes</item>
+        </set>
+      </function>
+      <function name="Mobile_Data_Config">
+        <set name="single">
+          <item name="Default" type="boolean">yes</item>
+          <item name="PromptWarningDialog" type="boolean">yes</item>
+        </set>
+      </function>
+    </module>
+    <module name="Crash_Report">
+      <function name="setting">
+        <set name="single">
+          <item name="turn_off_report" type="boolean">no</item>
+          <item name="turn_off_application_log" type="boolean">no</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="ACC">
+    <module name="Software_Update_FOTA">
+      <function name="settings">
+        <set>
+          <item name="support_default_auto_update" type="boolean">false</item>
+        </set>
+      </function>
+    </module>
+    <module name="Phone">
+      <function name="settings">
+        <set>
+          <item name="auto_answer_on_def" type="boolean">true</item>
+        </set>
+      </function>
+    </module>
+    <module name="Nationalroaming">
+      <function name="settings">
+        <set>
+          <item name="allow_national_roaming" type="boolean">true</item>
+        </set>
+        <set type="string-array" name="national_roaming_mccmnc">
+          <item>42507</item>
+          <item>21902</item>
+          <item>26006:26001.26002.26003</item>
+          <item>23420</item>
+          <item>22299</item>
+          <item>24002</item>
+          <item>23210</item>
+          <item>23205</item>
+          <item>23806</item>
+          <item>23430</item>
+          <item>23408</item>
+          <item>27205</item>
+          <item>27202:27205</item>
+          <item>27216:27202.27205</item>
+        </set>
+        <set type="string-array" name="nationalRoamingUiSupportList">
+          <item>42507:C:1:0</item>
+          <item>21902:C:1:0</item>
+          <item>26006:D:1:0</item>
+          <item>23420:D:0:0</item>
+          <item>27205:C:1:0</item>
+          <item>22299:D:0:0</item>
+          <item>24002:D:0:0</item>
+          <item>23210:D:2:0</item>
+          <item>23205:D:2:0</item>
+          <item>23806:D:0:0</item>
+          <item>23430:C:1:0</item>
+          <item>23408:C:1:0</item>
+          <item>27202:C:1:0</item>
+          <item>27216:C:1:0</item>
+        </set>
+      </function>
+    </module>
+    <module name="Android_Telephony">
+      <function name="settings">
+        <set>
+          <item name="customer_ca_bandwidth" type="string">&gt;=,15</item>
+        </set>
+      </function>
+    </module>
+    <module name="Settings">
+      <function name="settings">
+        <set type="string-array" name="wifi_auto_join_ssid_list">
+          <item>FreeWifi_secure</item>
+          <item>Wifi Extra</item>
+          <item>Wifi+</item>
+          <item> Wifi Extra</item>
+        </set>
+        <set type="string-array" name="wifi_read_only_ssid_list">
+          <item>FreeWifi_secure</item>
+          <item>Wifi Extra</item>
+          <item>Wifi+</item>
+          <item> Wifi Extra</item>
+        </set>
+      </function>
+      <function name="supported_locales">
+        <set name="ar" type="string-array">
+          <item>ar-EG</item>
+        </set>
+        <set name="en" type="string-array">
+          <item>en-US</item>
+          <item>en-GB</item>
+        </set>
+        <set name="es" type="string-array">
+          <item>es-ES</item>
+        </set>
+        <set name="fa" type="string-array">
+          <item>fa-IR</item>
+        </set>
+        <set name="fr" type="string-array">
+          <item>fr-FR</item>
+        </set>
+        <set name="it" type="string-array">
+          <item>it-IT</item>
+        </set>
+        <set name="pt" type="string-array">
+          <item>pt-PT</item>
+        </set>
+        <set name="ru" type="string-array">
+          <item>ru-RU</item>
+        </set>
+        <set name="tr" type="string-array">
+          <item>tr-TR</item>
+        </set>
+        <set name="hi" type="string-array">
+          <item>hi-IN</item>
+        </set>
+      </function>
+      <function name="supported-Language-list">
+        <set name="Language-order" type="string-array">
+          <item>ar</item>
+          <item>en</item>
+          <item>es</item>
+          <item>fa</item>
+          <item>fr</item>
+          <item>it</item>
+          <item>pt</item>
+          <item>ru</item>
+          <item>tr</item>
+          <item>hi</item>
+        </set>
+      </function>
+    </module>
+    <module name="HtcMobileData">
+      <function name="settings">
+        <set type="string-array" name="OmaCPSupportList">
+          <item>310160</item>
+          <item>310200</item>
+          <item>310210</item>
+          <item>310220</item>
+          <item>310230</item>
+          <item>310240</item>
+          <item>310250</item>
+          <item>310260</item>
+          <item>310270</item>
+          <item>310300</item>
+          <item>310310</item>
+          <item>310490</item>
+          <item>310530</item>
+          <item>310580</item>
+          <item>310590</item>
+          <item>310640</item>
+          <item>310660</item>
+          <item>310800</item>
+          <item>22610</item>
+          <item>21404</item>
+          <item>22201</item>
+          <item>23203</item>
+          <item>23207</item>
+          <item>23001</item>
+          <item>26201</item>
+          <item>20201</item>
+          <item>20416</item>
+          <item>26002</item>
+          <item>22801</item>
+          <item>20810</item>
+          <item>26202</item>
+          <item>20205</item>
+          <item>22210</item>
+          <item>20404</item>
+          <item>26801</item>
+          <item>21401</item>
+          <item>21418</item>
+          <item>23415</item>
+          <item>27201</item>
+        </set>
+      </function>
+    </module>
+    <module name="Setup">
+      <function name="settings">
+        <set>
+          <item name="oobe_boot_image" type="string">oobe_xxxhd.png</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="SettingsProvider">
+    <module name="res">
+      <function name="values">
+        <set name="single">
+          <item name="def_2g_on">2</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="system">
+    <module name="deviceData">
+      <function>
+        <set name="single">
+          <item name="device_name">HTC U11 plus</item>
+        </set>
+      </function>
+    </module>
+    <module name="deviceData1">
+      <function>
+        <set name="single">
+          <item name="sw_number">NA</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <BootConfiguration>
+    <BootAnimation animation="/system/customize/resource/hTC_bootup_U_QCT_2880.zip" />
+    <!-- splash_screen.png -->
+  </BootConfiguration>
+  <ShutdownConfiguration>
+    <ShutdownAnimation image_png="/system/customize/resource/hTC_downanimation.zip" />
+  </ShutdownConfiguration>
+  <category name="AudioService">
+    <module name="res">
+      <function name="values">
+        <set name="single">
+          <item name="enable_listen_notify">true</item>
+        </set>
+      </function>
+    </module>
+  </category>
+</customization_form>

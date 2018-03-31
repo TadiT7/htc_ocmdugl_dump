@@ -1,0 +1,6 @@
+TaskID : 518891
+Project : OCEAN_M_DUGL_O80_SENSE90GP
+SKU : HTC Europe[401]
+ROM Ver : 1.24.401.2
+Customization Id : 3061623
+RCMS Id : 398

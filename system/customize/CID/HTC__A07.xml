@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<customization_form>
+  <category name="application">
+    <module name="FOTA">
+      <function name="settings">
+        <set name="single">
+          <item name="Default_Download_Wifi" type="boolean">yes</item>
+          <item name="Default_Download_Wifi" type="boolean">yes</item>
+        </set>
+      </function>
+    </module>
+    <module name="OOBE">
+      <function name="Step_Config">
+        <set name="single">
+          <item name="Data_Connection" type="boolean">yes</item>
+        </set>
+      </function>
+      <function name="Data_Connection_Config">
+        <set name="single">
+          <item name="Show_Mobile" type="boolean">yes</item>
+        </set>
+      </function>
+      <function name="Mobile_Data_Config">
+        <set name="single">
+          <item name="Default" type="boolean">yes</item>
+          <item name="PromptWarningDialog" type="boolean">yes</item>
+        </set>
+      </function>
+    </module>
+    <module name="Crash_Report">
+      <function name="setting">
+        <set name="single">
+          <item name="turn_off_report" type="boolean">no</item>
+          <item name="turn_off_application_log" type="boolean">no</item>
+          <item name="turn_off_report" type="boolean">no</item>
+          <item name="turn_off_application_log" type="boolean">no</item>
+        </set>
+      </function>
+    </module>
+    <module name="HtcPhone">
+      <function name="specificDialNumbers">
+        <set name="single">
+          <item name="numbers">01,02,03,04</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="ACC">
+    <module name="Software_Update_FOTA">
+      <function name="settings">
+        <set>
+          <item name="support_default_auto_update" type="boolean">false</item>
+          <item name="support_default_auto_update" type="boolean">false</item>
+        </set>
+      </function>
+    </module>
+    <module name="Phone">
+      <function name="settings">
+        <set>
+          <item name="auto_answer_on_def" type="boolean">true</item>
+        </set>
+      </function>
+    </module>
+    <module name="Nationalroaming">
+      <function name="settings">
+        <set>
+          <item name="allow_national_roaming" type="boolean">true</item>
+        </set>
+        <set type="string-array" name="national_roaming_mccmnc">
+          <item>42507</item>
+          <item>21902</item>
+          <item>26006:26001.26002.26003</item>
+          <item>23420</item>
+          <item>22299</item>
+          <item>24002</item>
+          <item>23210</item>
+          <item>23205</item>
+          <item>23806</item>
+          <item>23430</item>
+          <item>23408</item>
+          <item>27205</item>
+          <item>27202:27205</item>
+          <item>27216:27202.27205</item>
+        </set>
+        <set type="string-array" name="nationalRoamingUiSupportList">
+          <item>42507:C:1:0</item>
+          <item>21902:C:1:0</item>
+          <item>26006:D:1:0</item>
+          <item>23420:D:0:0</item>
+          <item>27205:C:1:0</item>
+          <item>22299:D:0:0</item>
+          <item>24002:D:0:0</item>
+          <item>23210:D:2:0</item>
+          <item>23205:D:2:0</item>
+          <item>23806:D:0:0</item>
+          <item>23430:C:1:0</item>
+          <item>23408:C:1:0</item>
+          <item>27202:C:1:0</item>
+          <item>27216:C:1:0</item>
+        </set>
+      </function>
+    </module>
+    <module name="Android_Telephony">
+      <function name="settings">
+        <set>
+          <item name="customer_ca_bandwidth" type="string">&gt;=,15</item>
+        </set>
+      </function>
+    </module>
+    <module name="Settings">
+      <function name="settings">
+        <set type="string-array" name="wifi_auto_join_ssid_list">
+          <item>FreeWifi_secure</item>
+          <item>Wifi Extra</item>
+          <item>Wifi+</item>
+          <item> Wifi Extra</item>
+          <item>FreeWifi_secure</item>
+          <item>Wifi Extra</item>
+          <item>Wifi+</item>
+          <item> Wifi Extra</item>
+        </set>
+        <set type="string-array" name="wifi_read_only_ssid_list">
+          <item>FreeWifi_secure</item>
+          <item>Wifi Extra</item>
+          <item>Wifi+</item>
+          <item> Wifi Extra</item>
+          <item>FreeWifi_secure</item>
+          <item>Wifi Extra</item>
+          <item>Wifi+</item>
+          <item> Wifi Extra</item>
+        </set>
+      </function>
+      <function name="supported_locales">
+        <set name="ru" type="string-array">
+          <item>ru-RU</item>
+          <item>ru-RU</item>
+        </set>
+        <set name="en" type="string-array">
+          <item>en-US</item>
+          <item>en-GB</item>
+          <item>en-US</item>
+          <item>en-GB</item>
+        </set>
+        <set name="de" type="string-array">
+          <item>de-DE</item>
+          <item>de-DE</item>
+        </set>
+        <set name="fr" type="string-array">
+          <item>fr-FR</item>
+          <item>fr-FR</item>
+        </set>
+        <set name="it" type="string-array">
+          <item>it-IT</item>
+          <item>it-IT</item>
+        </set>
+        <set name="es" type="string-array">
+          <item>es-ES</item>
+          <item>es-ES</item>
+        </set>
+        <set name="tr" type="string-array">
+          <item>tr-TR</item>
+          <item>tr-TR</item>
+        </set>
+        <set name="fa" type="string-array">
+          <item>fa-IR</item>
+          <item>fa-IR</item>
+        </set>
+        <set name="uk" type="string-array">
+          <item>uk-UA</item>
+          <item>uk-UA</item>
+        </set>
+        <set name="kk" type="string-array">
+          <item>kk-KZ</item>
+          <item>kk-KZ</item>
+        </set>
+        <set name="hy" type="string-array">
+          <item>hy-AM</item>
+          <item>hy-AM</item>
+        </set>
+        <set name="et" type="string-array">
+          <item>et-EE</item>
+          <item>et-EE</item>
+        </set>
+        <set name="lv" type="string-array">
+          <item>lv-LV</item>
+          <item>lv-LV</item>
+        </set>
+        <set name="lt" type="string-array">
+          <item>lt-LT</item>
+          <item>lt-LT</item>
+        </set>
+        <set name="iw" type="string-array">
+          <item>iw-IL</item>
+          <item>iw-IL</item>
+        </set>
+        <set name="ar" type="string-array">
+          <item>ar-EG</item>
+        </set>
+        <set name="bg" type="string-array">
+          <item>bg-BG</item>
+        </set>
+        <set name="ca" type="string-array">
+          <item>ca-ES</item>
+        </set>
+        <set name="cs" type="string-array">
+          <item>cs-CZ</item>
+        </set>
+        <set name="da" type="string-array">
+          <item>da-DK</item>
+        </set>
+        <set name="el" type="string-array">
+          <item>el-GR</item>
+        </set>
+        <set name="fi" type="string-array">
+          <item>fi-FI</item>
+        </set>
+        <set name="hr" type="string-array">
+          <item>hr-HR</item>
+        </set>
+        <set name="hu" type="string-array">
+          <item>hu-HU</item>
+        </set>
+        <set name="nb" type="string-array">
+          <item>nb-NO</item>
+        </set>
+        <set name="nl" type="string-array">
+          <item>nl-NL</item>
+        </set>
+        <set name="pl" type="string-array">
+          <item>pl-PL</item>
+        </set>
+        <set name="pt" type="string-array">
+          <item>pt-PT</item>
+        </set>
+        <set name="ro" type="string-array">
+          <item>ro-RO</item>
+        </set>
+        <set name="sk" type="string-array">
+          <item>sk-SK</item>
+        </set>
+        <set name="sl" type="string-array">
+          <item>sl-SI</item>
+        </set>
+        <set name="sr-Cyrl" type="string-array">
+          <item>sr-Cyrl-RS</item>
+        </set>
+        <set name="sv" type="string-array">
+          <item>sv-SE</item>
+        </set>
+        <set name="hi" type="string-array">
+          <item>hi-IN</item>
+        </set>
+        <set name="in" type="string-array">
+          <item>in-ID</item>
+        </set>
+        <set name="ja" type="string-array">
+          <item>ja-JP</item>
+        </set>
+        <set name="ko" type="string-array">
+          <item>ko-KR</item>
+        </set>
+        <set name="ms" type="string-array">
+          <item>ms-MY</item>
+        </set>
+        <set name="my" type="string-array">
+          <item>my-MM</item>
+        </set>
+        <set name="th" type="string-array">
+          <item>th-TH</item>
+        </set>
+        <set name="vi" type="string-array">
+          <item>vi-VN</item>
+        </set>
+        <set name="zh-Hans" type="string-array">
+          <item>zh-Hans-CN</item>
+        </set>
+        <set name="zh-Hant" type="string-array">
+          <item>zh-Hant-TW</item>
+          <item>zh-Hant-HK</item>
+        </set>
+      </function>
+      <function name="supported-Language-list">
+        <set name="Language-order" type="string-array">
+          <item>ru</item>
+          <item>en</item>
+          <item>de</item>
+          <item>fr</item>
+          <item>it</item>
+          <item>es</item>
+          <item>tr</item>
+          <item>fa</item>
+          <item>uk</item>
+          <item>kk</item>
+          <item>hy</item>
+          <item>et</item>
+          <item>lv</item>
+          <item>lt</item>
+          <item>iw</item>
+          <item>ar</item>
+          <item>bg</item>
+          <item>ca</item>
+          <item>cs</item>
+          <item>da</item>
+          <item>de</item>
+          <item>el</item>
+          <item>en</item>
+          <item>es</item>
+          <item>et</item>
+          <item>fa</item>
+          <item>fi</item>
+          <item>fr</item>
+          <item>hr</item>
+          <item>hu</item>
+          <item>hy</item>
+          <item>it</item>
+          <item>iw</item>
+          <item>kk</item>
+          <item>lt</item>
+          <item>lv</item>
+          <item>nb</item>
+          <item>nl</item>
+          <item>pl</item>
+          <item>pt</item>
+          <item>ro</item>
+          <item>ru</item>
+          <item>sk</item>
+          <item>sl</item>
+          <item>sr-Cyrl</item>
+          <item>sv</item>
+          <item>tr</item>
+          <item>uk</item>
+        </set>
+      </function>
+    </module>
+    <module name="HtcMobileData">
+      <function name="settings">
+        <set type="string-array" name="OmaCPSupportList">
+          <item>310160</item>
+          <item>310200</item>
+          <item>310210</item>
+          <item>310220</item>
+          <item>310230</item>
+          <item>310240</item>
+          <item>310250</item>
+          <item>310260</item>
+          <item>310270</item>
+          <item>310300</item>
+          <item>310310</item>
+          <item>310490</item>
+          <item>310530</item>
+          <item>310580</item>
+          <item>310590</item>
+          <item>310640</item>
+          <item>310660</item>
+          <item>310800</item>
+          <item>22610</item>
+          <item>21404</item>
+          <item>22201</item>
+          <item>23203</item>
+          <item>23207</item>
+          <item>23001</item>
+          <item>26201</item>
+          <item>20201</item>
+          <item>20416</item>
+          <item>26002</item>
+          <item>22801</item>
+          <item>20810</item>
+          <item>26202</item>
+          <item>20205</item>
+          <item>22210</item>
+          <item>20404</item>
+          <item>26801</item>
+          <item>21401</item>
+          <item>21418</item>
+          <item>23415</item>
+          <item>27201</item>
+          <item>310160</item>
+          <item>310200</item>
+          <item>310210</item>
+          <item>310220</item>
+          <item>310230</item>
+          <item>310240</item>
+          <item>310250</item>
+          <item>310260</item>
+          <item>310270</item>
+          <item>310300</item>
+          <item>310310</item>
+          <item>310490</item>
+          <item>310530</item>
+          <item>310580</item>
+          <item>310590</item>
+          <item>310640</item>
+          <item>310660</item>
+          <item>310800</item>
+          <item>22610</item>
+          <item>21404</item>
+          <item>22201</item>
+          <item>23203</item>
+          <item>23207</item>
+          <item>23001</item>
+          <item>26201</item>
+          <item>20201</item>
+          <item>20416</item>
+          <item>26002</item>
+          <item>22801</item>
+          <item>20810</item>
+          <item>26202</item>
+          <item>20205</item>
+          <item>22210</item>
+          <item>20404</item>
+          <item>26801</item>
+          <item>21401</item>
+          <item>21418</item>
+          <item>23415</item>
+          <item>27201</item>
+        </set>
+      </function>
+    </module>
+    <module name="Setup">
+      <function name="settings">
+        <set>
+          <item name="oobe_boot_image" type="string">oobe_xxxhd.png</item>
+          <item name="oobe_boot_image" type="string">oobe_xxxhd.png</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="system">
+    <module name="defaultTime1224">
+      <function>
+        <set name="single">
+          <item name="default">24</item>
+        </set>
+      </function>
+    </module>
+    <module name="deviceData">
+      <function>
+        <set name="single">
+          <item name="device_name">HTC U11 plus</item>
+          <item name="device_name">HTC U11 plus</item>
+        </set>
+      </function>
+    </module>
+    <module name="deviceData1">
+      <function>
+        <set name="single">
+          <item name="sw_number">NA</item>
+          <item name="sw_number">NA</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="Settings">
+    <module name="list">
+      <function name="regulatory_generic_list">
+        <set name="single">
+          <!-- %%UAND000157_SAND000157_File Pool%% -->
+          <item name="country_1">Russia</item>
+          <!-- %%UAND000157_SAND000157_File Pool%% -->
+          <item name="icon_2">/system/customize/resource/rp_eac.png</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="SettingsProvider">
+    <module name="res">
+      <function name="values">
+        <set name="single">
+          <item name="def_2g_on">2</item>
+          <item name="def_2g_on">2</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <BootConfiguration>
+    <BootAnimation animation="/system/customize/resource/hTC_bootup_U_QCT_2880.zip" />
+    <!-- splash_screen.png -->
+    <BootAnimation animation="/system/customize/resource/hTC_bootup_U_QCT_2880.zip" />
+    <!-- splash_screen.png -->
+  </BootConfiguration>
+  <ShutdownConfiguration>
+    <ShutdownAnimation image_png="/system/customize/resource/hTC_downanimation.zip" />
+    <ShutdownAnimation image_png="/system/customize/resource/hTC_downanimation.zip" />
+  </ShutdownConfiguration>
+  <category name="AudioService">
+    <module name="res">
+      <function name="values">
+        <set name="single">
+          <item name="enable_listen_notify">true</item>
+        </set>
+      </function>
+    </module>
+  </category>
+</customization_form>

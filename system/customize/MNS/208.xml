@@ -1,0 +1,872 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<customization_form>
+  <category name="application">
+    <module name="weather_sync_provider">
+      <function name="settings">
+        <set name="single">
+          <item name="temprature_unit">c</item>
+          <item name="update_interval">3600000</item>
+        </set>
+      </function>
+    </module>
+    <module name="weather_provider">
+      <function name="default_city">
+        <set name="plenty" max="15">
+          <item name="app">com.htc.elroy.Weather</item>
+          <item name="type">1</item>
+          <item name="name">Paris</item>
+          <item name="country">France</item>
+          <item name="code">EUR|FR|FR012|PARIS</item>
+          <item name="timezone">-60</item>
+          <item name="timezoneid">Europe/Brussels</item>
+        </set>
+        <set name="plenty" max="15">
+          <item name="app">com.htc.elroy.Weather</item>
+          <item name="type">1</item>
+          <item name="name">London</item>
+          <item name="country">United Kingdom</item>
+          <item name="code">EUR|UK|UK124|LONDON</item>
+          <item name="timezone">0</item>
+          <item name="timezoneid">Europe/London</item>
+        </set>
+        <set name="plenty" max="15">
+          <item name="app">com.htc.elroy.Weather</item>
+          <item name="type">1</item>
+          <item name="name">Barcelona</item>
+          <item name="country">Spain</item>
+          <item name="code">EUR|ES|SP008|BARCELONA</item>
+          <item name="timezone">-60</item>
+          <item name="timezoneid">Europe/Brussels</item>
+        </set>
+        <set name="plenty" max="15">
+          <item name="app">com.htc.elroy.Weather</item>
+          <item name="type">1</item>
+          <item name="name">Rome</item>
+          <item name="country">Italy</item>
+          <item name="code">EUR|IT|IT007|ROMA</item>
+          <item name="timezone">-60</item>
+          <item name="timezoneid">Europe/Amsterdam</item>
+        </set>
+        <set name="plenty" max="15">
+          <item name="app">com.htc.elroy.Weather</item>
+          <item name="type">1</item>
+          <item name="name">Tokyo</item>
+          <item name="country">Japan</item>
+          <item name="code">ASI|JP|JA041|TOKYO</item>
+          <item name="timezone">-540</item>
+          <item name="timezoneid">Asia/Tokyo</item>
+        </set>
+        <set name="plenty" max="15">
+          <item name="app">com.htc.elroy.Weather</item>
+          <item name="type">1</item>
+          <item name="name">New York</item>
+          <item name="state">NY</item>
+          <item name="country">United States</item>
+          <item name="code">NAM|US|NY|NEW YORK</item>
+          <item name="timezone">300</item>
+          <item name="timezoneid">America/New_York</item>
+        </set>
+        <set name="plenty" max="15">
+          <item name="app">com.htc.elroy.Weather</item>
+          <item name="type">1</item>
+          <item name="name">Athinai</item>
+          <item name="country">Greece</item>
+          <item name="code">EUR|GR|GR007|ATHINAI</item>
+          <item name="timezone">-120</item>
+          <item name="timezoneid">Europe/Helsinki</item>
+        </set>
+      </function>
+    </module>
+    <module name="MessageConfig">
+      <function name="setting">
+        <set name="single">
+          <item name="SMS_Delivery_Report">false</item>
+          <item name="MMS_Delivery_Report">false</item>
+          <item name="MMS_Read_Report">false</item>
+          <item name="MMS_Auto_Retrieve">true</item>
+          <item name="MMS_Roaming_Auto_Retrieve">false</item>
+          <item name="MMS_Priority">Normal</item>
+          <item name="MMS_Msg_Size1">100K</item>
+          <item name="MMS_Msg_Size2">200K</item>
+          <item name="MMS_Msg_Size3">600K</item>
+          <item name="MMS_Msg_Size_Choose">600K</item>
+          <item name="MMS_Max_Recipient_Number">10</item>
+          <item name="SMS_Max_Recipient_Number">250</item>
+          <item name="SMS_Max_Concatenated_Number">15</item>
+          <item name="MMS_Max_Slide_Number">10</item>
+          <item name="MMS_Default_Slide_Duration">5000</item>
+          <item name="RECIPT_Show_Sent_Msg_History">true</item>
+          <item name="RECIPT_Show_Email_Address">false</item>
+          <item name="MSG_Preview_Line">1</item>
+          <item name="STORAGE_Del_Old_Msg">false</item>
+          <item name="STORAGE_Text_Msg_Limit">200</item>
+          <item name="STORAGE_MMS_Msg_Limit">20</item>
+          <item name="SMS_Wap_Push_Support">true</item>
+          <item name="SMS_Empty_Draft_Support">false</item>
+          <item name="SMS_To_Email_Support">false</item>
+          <item name="SMS_Class_Zero_Save_Support">true</item>
+          <item name="SMS_Concatenated_Email_SMS">false</item>
+          <item name="SMS_Subject_Support">false</item>
+          <item name="SMS_SMSC_Editable">true</item>
+          <item name="SMS_Empty_SMS_Support">true</item>
+          <item name="SMS_Use_Device_Time">false</item>
+          <item name="SMS_Characters">false</item>
+          <item name="MMS_Retry_Policy">15,15,15,15,15,15</item>
+          <item name="MSG_General_CMAS_Support">false</item>
+          <item name="MSG_Use_Signature">false</item>
+          <item name="MMS_Show_All_Mixed_Text">false</item>
+          <item name="RECIPT_Input_Type_Number">false</item>
+          <item name="MMS_Force_Display_In_Slideshow">false</item>
+          <item name="MMS_Show_Restricted_Mode">false</item>
+        </set>
+      </function>
+    </module>
+    <module name="Mail">
+      <function name="provider_setting">
+        <set name="plenty" max="10">
+          <item name="provider">yahoo.fr</item>
+          <item name="domain">yahoo.fr</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">bbox.fr</item>
+          <item name="domain">bbox.fr</item>
+          <item name="inserver">pop3.bbox.fr</item>
+          <item name="inport">110</item>
+          <item name="outserver">smtp.bbox.fr</item>
+          <item name="outport">25</item>
+          <item name="inprotocol">POP</item>
+          <item name="useSSLin">0</item>
+          <item name="useSSLout">0</item>
+          <item name="smtpauth">0</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">hotmail.fr</item>
+          <item name="domain">hotmail.fr</item>
+          <item name="inserver">imap-mail.outlook.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">smtp-mail.outlook.com</item>
+          <item name="outport">587</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">0</item>
+          <item name="useSSLout">2</item>
+          <item name="smtpauth">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">live.fr</item>
+          <item name="domain">live.fr</item>
+          <item name="inserver">pop3.live.com</item>
+          <item name="inport">995</item>
+          <item name="outserver">smtp.live.com</item>
+          <item name="outport">587</item>
+          <item name="inprotocol">POP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">2</item>
+          <item name="smtpauth">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">neuf.fr</item>
+          <item name="domain">neuf.fr</item>
+          <item name="inserver">pop.neuf.fr</item>
+          <item name="inport">110</item>
+          <item name="outserver">smtp.neuf.fr</item>
+          <item name="outport">25</item>
+          <item name="inprotocol">POP</item>
+          <item name="useSSLin">0</item>
+          <item name="useSSLout">0</item>
+          <item name="smtpauth">0</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">free.fr</item>
+          <item name="domain">free.fr</item>
+          <item name="inserver">pop.free.fr</item>
+          <item name="inport">110</item>
+          <item name="outserver">smtp.free.fr</item>
+          <item name="outport">25</item>
+          <item name="inprotocol">POP</item>
+          <item name="useSSLin">0</item>
+          <item name="useSSLout">0</item>
+          <item name="smtpauth">0</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">numericable.fr</item>
+          <item name="domain">numericable.fr</item>
+          <item name="inserver">pop.numericable.fr</item>
+          <item name="inport">110</item>
+          <item name="outserver">smtp.numericable.fr</item>
+          <item name="outport">25</item>
+          <item name="inprotocol">POP</item>
+          <item name="useSSLin">0</item>
+          <item name="useSSLout">0</item>
+          <item name="smtpauth">0</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">noos.fr</item>
+          <item name="domain">noos.fr</item>
+          <item name="inserver">pop.noos.fr</item>
+          <item name="inport">110</item>
+          <item name="outserver">smtp.noos.fr</item>
+          <item name="outport">25</item>
+          <item name="inprotocol">POP</item>
+          <item name="useSSLin">0</item>
+          <item name="useSSLout">0</item>
+          <item name="smtpauth">0</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">aliceadsl.fr</item>
+          <item name="domain">aliceadsl.fr</item>
+          <item name="inserver">pop.aliceadsl.fr</item>
+          <item name="inport">110</item>
+          <item name="outserver">smtp.aliceadsl.fr</item>
+          <item name="outport">25</item>
+          <item name="inprotocol">POP</item>
+          <item name="useSSLin">0</item>
+          <item name="useSSLout">0</item>
+          <item name="smtpauth">0</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">aol.com</item>
+          <item name="domain">aol.com</item>
+          <item name="inserver">imap.fr.aol.com</item>
+          <item name="inport">143</item>
+          <item name="outserver">smtp.aol.fr</item>
+          <item name="outport">25</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">0</item>
+          <item name="useSSLout">0</item>
+          <item name="smtpauth">0</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">club-internet.fr</item>
+          <item name="domain">club-internet.fr</item>
+          <item name="inserver">pop3.club-internet.fr</item>
+          <item name="inport">110</item>
+          <item name="outserver">mail.club-internet.fr</item>
+          <item name="outport">25</item>
+          <item name="inprotocol">POP</item>
+          <item name="useSSLin">0</item>
+          <item name="useSSLout">0</item>
+          <item name="smtpauth">0</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">dbmail.com</item>
+          <item name="domain">dbmail.com</item>
+          <item name="inserver">pop.dbmail.com</item>
+          <item name="inport">110</item>
+          <item name="outserver">smtpauth.dbmail.com</item>
+          <item name="outport">25</item>
+          <item name="inprotocol">POP</item>
+          <item name="useSSLin">0</item>
+          <item name="useSSLout">0</item>
+          <item name="smtpauth">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">laposte.net</item>
+          <item name="domain">laposte.net</item>
+          <item name="inserver">pop.laposte.net</item>
+          <item name="inport">110</item>
+          <item name="outserver">smtp.laposte.net</item>
+          <item name="outport">25</item>
+          <item name="inprotocol">POP</item>
+          <item name="useSSLin">0</item>
+          <item name="useSSLout">0</item>
+          <item name="smtpauth">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">orange.fr</item>
+          <item name="domain">orange.fr</item>
+          <item name="inserver">pop.orange.fr</item>
+          <item name="inport">110</item>
+          <item name="outserver">smtp.orange.fr</item>
+          <item name="outport">25</item>
+          <item name="inprotocol">POP</item>
+          <item name="useSSLin">0</item>
+          <item name="useSSLout">0</item>
+          <item name="smtpauth">0</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">tiscali.fr</item>
+          <item name="domain">tiscali.fr</item>
+          <item name="inserver">pop.tiscali.fr</item>
+          <item name="inport">110</item>
+          <item name="outserver">smtp.tiscali.fr</item>
+          <item name="outport">25</item>
+          <item name="inprotocol">POP</item>
+          <item name="useSSLin">0</item>
+          <item name="useSSLout">0</item>
+          <item name="smtpauth">0</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">wanadoo.fr</item>
+          <item name="domain">wanadoo.fr</item>
+          <item name="inserver">pop.wanadoo.fr</item>
+          <item name="inport">110</item>
+          <item name="outserver">smtp.orange.fr</item>
+          <item name="outport">25</item>
+          <item name="inprotocol">POP</item>
+          <item name="useSSLin">0</item>
+          <item name="useSSLout">0</item>
+          <item name="smtpauth">0</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">sfr.fr</item>
+          <item name="domain">sfr.fr</item>
+          <item name="inserver">pop.sfr.fr</item>
+          <item name="inport">110</item>
+          <item name="outserver">smtp-auth.sfr.fr</item>
+          <item name="outport">587</item>
+          <item name="inprotocol">POP</item>
+          <item name="useSSLin">0</item>
+          <item name="useSSLout">1</item>
+          <item name="smtpauth">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">YahooTW</item>
+          <item name="domain">yahoo.com.tw</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">Yahoo</item>
+          <item name="domain">yahoo.com</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">YahooHK</item>
+          <item name="domain">yahoo.com.hk</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">YahooUK</item>
+          <item name="domain">yahoo.co.uk</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">YahooIT</item>
+          <item name="domain">yahoo.it</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">Yahoo</item>
+          <item name="domain">yahoo.de</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">YahooES</item>
+          <item name="domain">yahoo.es</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">Ymail</item>
+          <item name="domain">ymail.com</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">RocketMail</item>
+          <item name="domain">rocketmail.com</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">Ovi</item>
+          <item name="domain">ovi.com</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+        <set name="plenty" max="10">
+          <item name="provider">Rogers</item>
+          <item name="domain">rogers.com</item>
+          <item name="inserver">htc.imap.mail.yahoo.com</item>
+          <item name="inport">993</item>
+          <item name="outserver">htc.smtp.mail.yahoo.com</item>
+          <item name="outport">465</item>
+          <item name="inprotocol">IMAP</item>
+          <item name="useSSLin">1</item>
+          <item name="useSSLout">1</item>
+          <item name="providerGroup">Yahoo</item>
+          <item name="htcInternal">1</item>
+        </set>
+      </function>
+    </module>
+    <module name="Launcher">
+      <function name="quick_launch_customization">
+        <set name="single" max="1">
+          <item name="file">system/customize/resource/quicklaunch.xml</item>
+        </set>
+      </function>
+      <function name="all_applications_customization">
+        <set name="single" max="1">
+          <item name="file">system/customize/resource/allapplication.xml</item>
+        </set>
+      </function>
+      <function name="extra_wallpapers">
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_00.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_01.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_02.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_03.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_04.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_05.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_06.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_07.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_08.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_09.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_10.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_11.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_12.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_13.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_14.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_15.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_16.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_17.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_18.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_19.jpg</item>
+        </set>
+        <set name="plenty" max="10">
+          <item type="file_name" name="image">wallpapers_20.jpg</item>
+        </set>
+      </function>
+      <function name="scene_list">
+        <set name="plenty" max="1">
+          <item name="scenename">HTC</item>
+          <item name="pages_count">3</item>
+          <item name="home_index">1</item>
+          <item name="feed_index">0</item>
+        </set>
+      </function>
+      <function name="1_folders">
+        <set name="plenty">
+          <item name="title">Google</item>
+          <item name="screen">1</item>
+          <item name="x">0</item>
+          <item name="y">4</item>
+        </set>
+        <set name="plenty">
+          <item name="title">Social</item>
+          <item name="screen">2</item>
+          <item name="x">4</item>
+          <item name="y">4</item>
+        </set>
+        <set name="plenty">
+          <item name="title">Create</item>
+          <item name="screen">1</item>
+          <item name="x">1</item>
+          <item name="y">4</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Social</item>
+          <item name="package">com.instagram.android</item>
+          <item name="class">com.instagram.android.activity.MainTabActivity</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Social</item>
+          <item name="package">com.facebook.orca</item>
+          <item name="class">com.facebook.orca.auth.StartScreenActivity</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Create</item>
+          <item name="package">com.google.android.apps.docs.editors.docs</item>
+          <item name="class">com.google.android.apps.docs.app.NewMainProxyActivity</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Create</item>
+          <item name="package">com.google.android.apps.docs.editors.sheets</item>
+          <item name="class">com.google.android.apps.docs.app.NewMainProxyActivity</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Create</item>
+          <item name="package">com.google.android.apps.docs.editors.slides</item>
+          <item name="class">com.google.android.apps.docs.app.NewMainProxyActivity</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Create</item>
+          <item name="package">com.google.android.apps.docs</item>
+          <item name="class">com.google.android.apps.docs.app.NewMainProxyActivity</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Google</item>
+          <item name="package">com.google.android.googlequicksearchbox</item>
+          <item name="class">com.google.android.googlequicksearchbox.SearchActivity</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Google</item>
+          <item name="package">com.google.android.gm</item>
+          <item name="class">com.google.android.gm.ConversationListActivityGmail</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Google</item>
+          <item name="package">com.google.android.apps.maps</item>
+          <item name="class">com.google.android.maps.MapsActivity</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Google</item>
+          <item name="package">com.google.android.youtube</item>
+          <item name="class">com.google.android.youtube.app.honeycomb.Shell$HomeActivity</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Google</item>
+          <item name="package">com.google.android.music</item>
+          <item name="class">com.android.music.activitymanagement.TopLevelActivity</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Google</item>
+          <item name="package">com.google.android.videos</item>
+          <item name="class">com.google.android.youtube.videos.EntryPoint</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Google</item>
+          <item name="package">com.google.android.apps.tachyon</item>
+          <item name="class">com.google.android.apps.tachyon.MainActivity</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Google</item>
+          <item name="package">com.google.android.apps.photos</item>
+          <item name="class">com.google.android.apps.photos.home.HomeActivity</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Create</item>
+          <item name="package">com.google.android.keep</item>
+          <item name="class">com.google.android.keep.activities.BrowseActivity</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="parent">Google</item>
+          <item name="package">com.google.android.apps.walletnfcrel</item>
+          <item name="class">com.google.commerce.tapandpay.android.cardlist.CardListActivity</item>
+          <item name="itemtype">0</item>
+        </set>
+      </function>
+      <function name="1_shortcuts">
+        <set name="plenty">
+          <item name="package">com.android.vending</item>
+          <item name="class">com.android.vending.AssetBrowserActivity</item>
+          <item name="screen">1</item>
+          <item name="x">4</item>
+          <item name="y">4</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="package">com.facebook.katana</item>
+          <item name="class">com.facebook.katana.LoginActivity</item>
+          <item name="screen">2</item>
+          <item name="x">3</item>
+          <item name="y">4</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="package">com.google.android.calendar</item>
+          <item name="class">com.android.calendar.AllInOneActivity</item>
+          <item name="screen">1</item>
+          <item name="x">3</item>
+          <item name="y">4</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="package">com.htc.guide</item>
+          <item name="class">com.htc.guide.MainActivity</item>
+          <item name="screen">2</item>
+          <item name="x">0</item>
+          <item name="y">4</item>
+          <item name="itemtype">0</item>
+        </set>
+        <set name="plenty">
+          <item name="package">com.htc.aiclient</item>
+          <item name="class">com.htc.aiclient.OOBE.MainActivity</item>
+          <item name="screen">1</item>
+          <item name="x">2</item>
+          <item name="y">4</item>
+          <item name="itemtype">0</item>
+        </set>
+      </function>
+      <function name="1_app_widgets">
+        <set name="plenty" max="19">
+          <item name="package_name">com.htc.launcher</item>
+          <item name="app_widget_provider">com.htc.widget.weatherclock.WeatherTransClock4x1</item>
+          <item name="screen">1</item>
+          <item name="cell_x">0</item>
+          <item name="cell_y">0</item>
+          <item name="span_x">5</item>
+          <item name="span_y">1</item>
+        </set>
+        <set name="plenty" max="19">
+          <item name="package_name">com.google.android.googlequicksearchbox</item>
+          <item name="app_widget_provider">com.google.android.googlequicksearchbox.SearchWidgetProvider</item>
+          <item name="screen">1</item>
+          <item name="cell_x">0</item>
+          <item name="cell_y">1</item>
+          <item name="span_x">5</item>
+          <item name="span_y">1</item>
+        </set>
+      </function>
+    </module>
+    <module name="Settings">
+      <function name="resource_path">
+        <set name="single" max="1">
+          <item name="path">/system/customize/resource/</item>
+        </set>
+      </function>
+      <function name="date_format_list">
+        <set name="plenty" max="6">
+          <item name="date_format1">MM/dd/yyyy</item>
+          <item name="date_format2">dd/MM/yyyy</item>
+          <item name="date_format3">yyyy/MM/dd</item>
+          <item name="date_format4">EE, MMM d, yyyy</item>
+          <item name="date_format5">EE, d MMM yyyy</item>
+          <item name="date_format6">yyyy MMM d, EE</item>
+        </set>
+      </function>
+      <function name="date_format_list_short">
+        <set name="plenty" max="6">
+          <item name="date_format_short1">MM/dd</item>
+          <item name="date_format_short2">dd/MM</item>
+          <item name="date_format_short3">MM/dd</item>
+          <item name="date_format_short4">EE, MMM d</item>
+          <item name="date_format_short5">EE, d MMM</item>
+          <item name="date_format_short6">MMM d, EE</item>
+        </set>
+      </function>
+    </module>
+    <module name="Chrome">
+      <function name="bookmarks_folder_name">
+        <set name="single">
+          <item name="value">HTC bookmarks</item>
+        </set>
+      </function>
+      <function name="homepage">
+        <set name="single">
+          <item name="url">http://www.google.com</item>
+        </set>
+      </function>
+      <function name="bookmark">
+        <set name="plenty">
+          <item name="title">HTC</item>
+          <item name="url">http://www.htc.com/fr</item>
+        </set>
+        <set name="plenty">
+          <item name="title">Boutique HTC</item>
+          <item name="url">http://shop.emea.htc.com/fr</item>
+        </set>
+        <set name="plenty">
+          <item name="title">Google</item>
+          <item name="url">http://www.google.fr</item>
+        </set>
+        <set name="plenty">
+          <item name="title">Yahoo</item>
+          <item name="url">http://www.yahoo.fr</item>
+        </set>
+        <set name="plenty">
+          <item name="title">Wikipedia</item>
+          <item name="url">http://fr.wikipedia.org/wiki/Accueil</item>
+        </set>
+        <set name="plenty">
+          <item name="title">Page Facebook HTC</item>
+          <item name="url">http://www.facebook.com/htcfr</item>
+        </set>
+        <set name="plenty">
+          <item name="title">AccuWeather</item>
+          <item name="url">http://www.accuweather.com/m/default.aspx?p=htcand&amp;loc</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="system">
+    <module name="defaultTimeFormatSetting">
+      <function>
+        <set name="single">
+          <item name="default">EE, d MMM yyyy</item>
+        </set>
+      </function>
+    </module>
+    <module name="defaultTimeFormatSettingShort">
+      <function>
+        <set name="single">
+          <item name="default">EE, d MMM</item>
+        </set>
+      </function>
+    </module>
+    <module name="defaultInputMethod">
+      <function name="default_IME_keyboard_type">
+        <set name="single">
+          <item name="default">2-1</item>
+        </set>
+      </function>
+      <function name="default_IME_vibrate_set">
+        <set name="single">
+          <item name="default">yes</item>
+        </set>
+      </function>
+      <function name="default_IKB_settings_checked">
+        <set name="single">
+          <item name="checked_list_latin">English;German;France;Italian;Spanish;Dutch;Portugal;</item>
+        </set>
+      </function>
+    </module>
+    <module name="defaultLocale">
+      <function>
+        <set name="single">
+          <item name="defeault">fr-FR</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="force_change">
+    <module name="MMS">
+      <function name="ua_string">
+        <set name="single">
+          <item name="value">HTC_U11_plus/1.0</item>
+        </set>
+      </function>
+      <function name="ua_profile">
+        <set name="single">
+          <item name="value">http://www.htcmms.com.tw/Android/Common/0OdlKudP10/ua-profile.xml</item>
+        </set>
+      </function>
+    </module>
+  </category>
+  <category name="ACC">
+    <module name="Prism">
+      <function name="settings">
+        <set type="integer-array" name="default_homescreen_grid_size">
+          <item>5</item>
+          <item>5</item>
+        </set>
+      </function>
+    </module>
+  </category>
+</customization_form>

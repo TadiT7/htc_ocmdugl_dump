@@ -1,0 +1,4 @@
+service htcnetd /system/bin/htcnetd
+    class main
+    socket htcnetd stream 0660 root inet
+    user root
